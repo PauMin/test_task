@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# React + TypeScript + RxJs Test Task
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Task description
+
+**Table generator**
+* Form for adding records to table, the same form for editing records
+* Only first table could be filled, other could be only edited
+* Copy button copies table, new table appears beneath origin
+* Delete button, deletes table, first table could not be deleted
+* Rows from all tables could be edited and deleted, changes should be recorded only inside table with selected row
+* In table on field focus placeholder should be hidden
 
 ## Available Scripts
 
@@ -38,9 +48,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).

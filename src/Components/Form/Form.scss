@@ -1,0 +1,38 @@
+@import "../../variables";
+
+.TableForm {
+  padding: $form-spacing;
+  background-color: $white;
+  border-radius: $initial-border-radius;
+  width: $form-width;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2);
+
+  &__input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid $gray;
+    border-radius: $initial-border-radius;
+    font-family: $font-family;
+    font-size: $font-size-small;
+    padding-left: 15px;
+
+    &:not(:last-child) {
+      margin-bottom: $form-spacing;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-family;
+    font-size: $font-size;
+    border: 0;
+    background-color: $light-blue;
+    height: 40px;
+    border-radius: $initial-border-radius;
+    color: $white;
+    cursor: pointer;
+  }
+}

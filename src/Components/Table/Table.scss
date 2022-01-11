@@ -1,0 +1,118 @@
+@import "../../variables";
+
+.Table {
+  font-family: $font-family;
+  font-size: $font-size;
+  width: 595px;
+  position: relative;
+
+  .buttons {
+    position: absolute;
+    right: 0;
+    top: -40px;
+
+    .button-copy {
+      width: 90px;
+      background-color: $light-blue;
+      border: 0;
+      border-radius: $initial-border-radius;
+      color: $white;
+      height: 25px;
+      font-family: $font-family;
+      font-size: $font-size-small;
+      margin-right: 25px;
+      cursor: pointer;
+    }
+
+    .button-delete {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  table {
+    width: 100%;
+    background-color: $white;
+    border-collapse: separate;
+    border: 1px solid $gray;
+    border-radius: $initial-border-radius;
+  }
+
+  &__head {
+    background-color: $dark-blue;
+
+    th {
+      text-align: left;
+      line-height: $table-cell-height;
+      height: $table-cell-height;
+      color: $white;
+      font-weight: normal;
+      padding-left: $table-cell-padding-left;
+    }
+  }
+
+  &__body {
+    td {
+      padding-left: $table-cell-padding-left;
+      height: $table-cell-height;
+      line-height: $table-cell-height;
+      border-left: 1px solid $gray;
+      border-top: 1px solid $gray;
+      font-size: $font-size-small;
+      color: $dip-dark-blue;
+
+      &:first-child {
+        border-left: none;
+      }
+
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__action {
+    display: flex;
+    justify-content: center;
+
+    span {
+      cursor: pointer;
+      text-decoration: underline;
+
+      &:first-child {
+        margin-right: 50px;
+      }
+    }
+
+    &--edit {
+      color: $blue;
+    }
+
+    &--delete {
+      color: $red;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .Table {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+
+    &__head, &__body {
+      th, td {
+        padding-left: 0;
+        text-align: center;
+      }
+    }
+
+    &__action {
+      span {
+        &:first-child {
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
